@@ -76,85 +76,143 @@
     <div class="section-title">
       <h2>Campaign Form</h2>
     </div>
-    <div class="container">
-    	<div class="row">
-    		<section>
-            <div class="wizard">
-                <div class="wizard-inner">
-                    <div class="connecting-line"></div>
-                    <ul class="nav nav-tabs" role="tablist">
+      <div >
+      <!-- Sign up form -->
+      <form>
+          <!-- Sign up card -->
+          <div class="card person-card">
+              <div class="card-body">
+                  <!-- Sex image -->
+                  <h2 id="who_message" class="card-title">Who are you ?</h2>
+                  <!-- First row (on medium screen) -->
+                  <div class="row">
+                      <div class="form-group col-md-2">
+                          <select id="input_sex" class="form-control">
+                              <option value="Mr.">Mr.</option>
+                              <option value="Ms.">Ms.</option>
+                          </select>
+                      </div>
+                      <div class="form-group col-md-5">
+                          <input id="first_name" type="text" class="form-control" placeholder="First name">
+                          <div id="first_name_feedback" class="invalid-feedback">
 
-                        <li role="presentation" class="active">
-                            <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Step 1">
-                                <span class="round-tab">
-                                    <i class="glyphicon glyphicon-folder-open"></i>
-                                </span>
-                            </a>
-                        </li>
+                          </div>
+                      </div>
+                      <div class="form-group col-md-5">
+                          <input id="last_name" type="text" class="form-control" placeholder="Last name">
+                          <div id="last_name_feedback" class="invalid-feedback">
 
-                        <li role="presentation" class="disabled">
-                            <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Step 2">
-                                <span class="round-tab">
-                                    <i class="glyphicon glyphicon-pencil"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li role="presentation" class="disabled">
-                            <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Step 3">
-                                <span class="round-tab">
-                                    <i class="glyphicon glyphicon-picture"></i>
-                                </span>
-                            </a>
-                        </li>
-
-                        <li role="presentation" class="disabled">
-                            <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="Complete">
-                                <span class="round-tab">
-                                    <i class="glyphicon glyphicon-ok"></i>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <form role="form">
-                    <div class="tab-content">
-                        <div class="tab-pane active" role="tabpanel" id="step1">
-                            <h3>Step 1</h3>
-                            <p>This is step 1</p>
-                            <ul class="list-inline pull-right">
-                                <li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
-                            </ul>
-                        </div>
-                        <div class="tab-pane" role="tabpanel" id="step2">
-                            <h3>Step 2</h3>
-                            <p>This is step 2</p>
-                            <ul class="list-inline pull-right">
-                                <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
-                                <li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
-                            </ul>
-                        </div>
-                        <div class="tab-pane" role="tabpanel" id="step3">
-                            <h3>Step 3</h3>
-                            <p>This is step 3</p>
-                            <ul class="list-inline pull-right">
-                                <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
-                                <li><button type="button" class="btn btn-default next-step">Skip</button></li>
-                                <li><button type="button" class="btn btn-primary btn-info-full next-step">Save and continue</button></li>
-                            </ul>
-                        </div>
-                        <div class="tab-pane" role="tabpanel" id="complete">
-                            <h3>Complete</h3>
-                            <p>You have successfully completed all steps.</p>
-                        </div>
-                        <div class="clearfix"></div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                    <div class="form-group col-md-6">
+                      Relationship
+                      <select id="input_relationship" class="form-control">
+                          <option value="Patient">Patient</option>
+                          <option value="Relative">Relative</option>
+                      </select>
                     </div>
-                </form>
-            </div>
-        </section>
-       </div>
-    </div>
+                    <div class="form-group col-md-6">
+                      Type of cancer
+                      <select id="input_relationship" class="form-control">
+                          <option value="Breast cancer">Breast cancer</option>
+                          <option value="Lung cancer">Lung cancer</option>
+                          <option value="Bladder cancer">Bladder cancer</option>
+                      </select>
+                    </div>
 
+                  </div>
+              </div>
+          </div>
+
+          <div class="card-body">
+              <h2 class="card-title">How to contact you ?</h2>
+              <div class="row">
+                  <div class="form-group col-md-6">
+                    <div class="form-group">
+                        <label for="goal" class="col-form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="example@gmail.com" required>
+                    </div>
+
+                  </div>
+                  <div class="form-group col-md-6">
+                    <div class="form-group">
+                      <div class="form-group">
+                          <label for="endDate" class="col-form-label">Phone number</label>
+                          <input type="text" class="form-control" id="tel" placeholder="086-xxx-xxxx" required>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="card-body">
+              <h2 class="card-title">Why you want our help?</h2>
+              <div class="row">
+                  <div class="form-group col-md-12">
+                    <div class="form-group">
+                        <label for="goal" class="col-form-label">Description</label>
+                        <textarea name="Description"  required> </textarea><br>
+                    </div>
+
+                  </div>
+              </div>
+          </div>
+
+
+          <div class="row">
+              <div class="col-md-12" style="padding=0.5em;">
+                  <div class="card">
+                      <div class="card-body">
+                          <h2 class="card-title">Where do patient live?</h2>
+                          <div class="form-group">
+                              <label for="email" class="col-form-label">Address</label>
+                              <input type="email" class="form-control" id="email" placeholder="example@gmail.com" required>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+
+          </div>
+
+          <div class="card-body">
+              <h2 class="card-title">How much do you expect to get paid?</h2>
+              <div class="row">
+                  <div class="form-group col-md-6">
+                    <div class="form-group">
+                        <label for="goal" class="col-form-label">Goal</label>
+                        <input type="text" class="form-control" id="goal" placeholder="xx,xxx Baht" required>
+                    </div>
+
+                  </div>
+                  <div class="form-group col-md-6">
+                    <div class="form-group">
+                      <div class="form-group">
+                          <label for="endDate" class="col-form-label">End date</label>
+                          <input type="date" class="form-control" id="endDate" placeholder="DD/MM/YY" required>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="card-body">
+              <h2 id="who_message" class="card-title">Attach some picture</h2>
+              <div class="row">
+                  <div class="form-group col-md-12">
+                    <input type="file" name="file" id="file" class="upload" />
+                    <label for="file">Choose a file</label>
+                  </div>
+              </div>
+          </div>
+
+          <div style="margin-top: 1em;">
+              <button type="button" class="btn btn-primary btn-lg btn-block">Submit</button>
+          </div>
+          </form>
+  </div>
   </div>
 </div>
 
