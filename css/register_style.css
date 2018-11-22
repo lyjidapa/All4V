@@ -1,0 +1,73 @@
+body{
+  margin:0;
+  padding:0;
+  outline:none;
+  font:12px Arial;
+  font-weight:bold;
+  font-family: 'Comfortaa', cursive;
+  user-select:none;
+}
+#main{
+  width:500px;
+  margin:auto;
+  border:1px solid #eee;
+  margin-top:100px;
+  font-family: 'Comfortaa', cursive;
+  position:relative;
+  border-radius:4px;
+  box-shadow: 0 0 3px #eee;
+}
+table{
+  margin:auto;
+  font-family: 'Comfortaa', cursive;
+}
+td{
+  padding:10px;
+  font-family: 'Comfortaa', cursive;
+}
+input[type="text"], input[type="password"]{
+  padding:10px;
+  border-radius:3px;
+  border:none;
+  border:1px solid #eee;
+  width:405px;
+  outline:none;
+  font-family: 'Comfortaa', cursive;
+}
+button{
+  padding:10px;
+  border:none;
+  border-radius:4px;
+  background:#069;
+  color:#fff;
+  outline:none;
+  float:right;
+  cursor:pointer;
+  font-family: 'Comfortaa', cursive;
+  margin-left:15px;
+}
+h2{
+  font-family: 'Comfortaa', cursive;
+  color:#666;
+}
+#info{
+  padding:10px;
+  border-radius:3px;
+  position:absolute;
+  top:310px;
+  left:27px;
+  color:#069;
+  display:none;
+  font-size:11px;
+}
+#btnRegister{
+  background:#2ecc71;
+}
+/*
+#btnLogin{
+  background:#34495e;
+}
+#loginTable{
+  display:none;
+}
+*/
