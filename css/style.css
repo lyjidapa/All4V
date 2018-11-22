@@ -365,6 +365,10 @@ left: 0;
 height: 10px;
 background-color: #efefef;
 }
+
+#donate-box{
+	right: 0;
+}
 /* Portfolio Section */
 #portfolio {
 	padding: 100px 0;
