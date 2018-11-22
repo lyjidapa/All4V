@@ -539,6 +539,48 @@ color: #777;
 	color: #e52f3c;
 }
 
+/*campaign 1*/
+.container {
+    position: relative;
+}
+h6 {
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 20px;
+	margin-top: 50px;
+}
+.cam-text{
+	margin-top: 100px;
+
+}
+.tab-select>.select{
+    display: inline-block;
+    font-family: "kanitlight",Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    font-size: 1.25em;
+    list-style: none;
+}
+
+li1 {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.link{
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Style the active class (and buttons on mouse-over) */
+/* .active, .link:hover {
+  background-color: #666;
+  color: white;
+} */
+
 @media (max-width: 768px) {
 #about img {
 	margin: 50px 0;
