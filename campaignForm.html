@@ -9,7 +9,6 @@
 
 <!-- Favicons
     ================================================== -->
-<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
 <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
@@ -33,12 +32,6 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!-- campaign form -->
-    <link rel="stylesheet" type="text/css" href="css/campaignForm.css">
-    <script src="js/campaignForm.js"> </script>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -76,46 +69,42 @@
     <div class="section-title">
       <h2>Campaign Form</h2>
     </div>
-      <div >
-      <!-- Sign up form -->
-      <form>
-          <!-- Sign up card -->
+      <div>
+      <form  id="newCampaign" method = "post" >
           <div class="card person-card">
               <div class="card-body">
-                  <!-- Sex image -->
                   <h2 id="who_message" class="card-title">Who are you ?</h2>
-                  <!-- First row (on medium screen) -->
                   <div class="row">
                       <div class="form-group col-md-2">
-                          <select id="input_sex" class="form-control">
+                          <select id="inputSex" class="form-control">
                               <option value="Mr.">Mr.</option>
                               <option value="Ms.">Ms.</option>
                           </select>
                       </div>
                       <div class="form-group col-md-5">
-                          <input id="first_name" type="text" class="form-control" placeholder="First name">
-                          <div id="first_name_feedback" class="invalid-feedback">
+                          <input id="inputFirstName" type="text" class="form-control" placeholder="First name">
+                          <div id="inputFirstNameFeedback" class="invalid-feedback">
 
-                          </div>
+                         </div>
                       </div>
                       <div class="form-group col-md-5">
-                          <input id="last_name" type="text" class="form-control" placeholder="Last name">
-                          <div id="last_name_feedback" class="invalid-feedback">
+                          <input id="inputLastName" type="text" class="form-control" placeholder="Last name">
+                          <div id="inputLastNameFeedback" class="invalid-feedback">
 
-                          </div>
+                         </div>
                       </div>
                   </div>
                   <div class="row">
                     <div class="form-group col-md-6">
                       Relationship
-                      <select id="input_relationship" class="form-control">
+                      <select id="inputRelationship" class="form-control">
                           <option value="Patient">Patient</option>
                           <option value="Relative">Relative</option>
                       </select>
                     </div>
                     <div class="form-group col-md-6">
                       Type of cancer
-                      <select id="input_relationship" class="form-control">
+                      <select id="inputCancerType" class="form-control">
                           <option value="Breast cancer">Breast cancer</option>
                           <option value="Lung cancer">Lung cancer</option>
                           <option value="Bladder cancer">Bladder cancer</option>
@@ -132,7 +121,7 @@
                   <div class="form-group col-md-6">
                     <div class="form-group">
                         <label for="goal" class="col-form-label">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="example@gmail.com" required>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="example@gmail.com" >
                     </div>
 
                   </div>
@@ -140,7 +129,7 @@
                     <div class="form-group">
                       <div class="form-group">
                           <label for="endDate" class="col-form-label">Phone number</label>
-                          <input type="text" class="form-control" id="tel" placeholder="086-xxx-xxxx" required>
+                          <input type="text" class="form-control" id="inputTel" placeholder="0xx-xxx-xxxx" >
                       </div>
                     </div>
                   </div>
@@ -153,7 +142,7 @@
                   <div class="form-group col-md-12">
                     <div class="form-group">
                         <label for="goal" class="col-form-label">Description</label>
-                        <textarea name="Description"  required> </textarea><br>
+                        <textarea id="inputDescription" name="Description" > </textarea><br>
                     </div>
 
                   </div>
@@ -167,8 +156,8 @@
                       <div class="card-body">
                           <h2 class="card-title">Where do patient live?</h2>
                           <div class="form-group">
-                              <label for="email" class="col-form-label">Address</label>
-                              <input type="email" class="form-control" id="email" placeholder="example@gmail.com" required>
+                              <label for="address" class="col-form-label" >Address</label>
+                              <input type="text" class="form-control" id="inputAddress"  >
                           </div>
                       </div>
                   </div>
@@ -183,7 +172,7 @@
                   <div class="form-group col-md-6">
                     <div class="form-group">
                         <label for="goal" class="col-form-label">Goal</label>
-                        <input type="text" class="form-control" id="goal" placeholder="xx,xxx Baht" required>
+                        <input type="text" class="form-control" id="inputGoal" placeholder="xx,xxx Baht" >
                     </div>
 
                   </div>
@@ -191,7 +180,7 @@
                     <div class="form-group">
                       <div class="form-group">
                           <label for="endDate" class="col-form-label">End date</label>
-                          <input type="date" class="form-control" id="endDate" placeholder="DD/MM/YY" required>
+                          <input type="date" class="form-control" id="inputEndDate" placeholder="DD/MM/YY">
                       </div>
                     </div>
                   </div>
@@ -199,19 +188,17 @@
           </div>
 
           <div class="card-body">
-              <h2 id="who_message" class="card-title">Attach some picture</h2>
-              <div class="row">
-                  <div class="form-group col-md-12">
-                    <input type="file" name="file" id="file" class="upload" />
-                    <label for="file">Choose a file</label>
-                  </div>
+              <h2 class="card-title">Attach a picture</h2>
+              <div class="row" style="position: center">
+                <center><input type='file' onchange="readURL(this);" /></center>
+                <center><img id="blah"  /></center>
               </div>
           </div>
 
           <div style="margin-top: 1em;">
-              <button type="button" class="btn btn-primary btn-lg btn-block">Submit</button>
+              <button onclick="location.href='submitCampaignForm.html';" id="saveCampaignForm"  type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
           </div>
-          </form>
+      </form>
   </div>
   </div>
 </div>
@@ -225,9 +212,30 @@
 </div>
 <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
-<script type="text/javascript" src="js/SmoothScroll.js"></script>
 <script type="text/javascript" src="js/nivo-lightbox.js"></script>
 <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
 <script type="text/javascript" src="js/contact_me.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+<!-- campaign form -->
+<link rel="stylesheet" type="text/css" href="css/campaignForm.css">
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 </body>
+<script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+<!-- <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAfXhEIrZ2lgabQXDuNALGZvcU-RNhHvCY",
+    authDomain: "all4v-fd7fe.firebaseapp.com",
+    databaseURL: "https://all4v-fd7fe.firebaseio.com",
+    projectId: "all4v-fd7fe",
+    storageBucket: "all4v-fd7fe.appspot.com",
+    messagingSenderId: "750350348578"
+  };
+  firebase.initializeApp(config);
+</script> -->
+<script  type="text/javascript" src="js/campaignForm.js"> </script>
+
+</html>
