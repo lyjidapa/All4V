@@ -9,7 +9,7 @@
 
 <!-- Favicons
     ================================================== -->
-<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> -->
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
 <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
@@ -32,6 +32,8 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+    <script type="text/javascript" src="js/firebase.js"></script>
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 <!-- Navigation
@@ -49,9 +51,9 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about" class="page-scroll">About</a></li>
+        <li><a onclick="window.location.href='/All4V/index.html'">Home</a></li>
         <li><a href="#services" class="page-scroll">Campaigns</a></li>
-        <li><a href="#portfolio" class="page-scroll">Projects</a></li>
+        <li><a href="#about" class="page-scroll">About us</a></li>
         <li><h2>|</h2></li>
         <li><a href="#login" class="page-scroll">Login</a></li>
         <li><a href="#contact" class="page-scroll">Registration</a></li>
@@ -77,7 +79,78 @@
   </div>
 </header>
 <!-- Get Touch Section -->
+<!-- Services Section -->
+<div id="services">
+  <div class="container">
+    <div class="section-title">
+      <h2>Our Campaigns</h2>
+    </div>
 
+      <div class="col-md-4">
+        <div class="service-media"> <img src="img/services/service-1.jpg" alt=" "> </div>
+        <div class="service-desc">
+          <h3>Waruttaya Sulhong</h3>
+          <p>Her name is Waruttaya Sulhong studying a kindergarten in Amphoe Tayang, Tumbon Tayang,Petchburi. She has knee cancer and needs to do surgery as fast as possible.</p>
+        </div>
+        <div class="donate-box">
+          <div class="goal">
+            <h3>Goal</h3>
+            <div class="top-progress">
+              <span class="money">69,000 Baht</span>
+            </div>
+            <span class="percent">70%</span>
+            <div class="progress-bar">
+              <span class="bar-100" style="width:100%"></span>
+              <span class="bar" style="width:70%"></span>
+            </div>
+            <br><br>
+            <center><button class="btn btn-custom btn-lg page-scroll" onclick="window.location.href='/All4V/campaign1.html'">♡ Donate</button></center>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-media"> <img src="img/services/service-2.jpg" alt=" "> </div>
+        <div class="service-desc">
+          <h3>Mr. John Lee</h3>
+          <p>He has stage IV lung cancer because he used to be a huge smoker. He does not have any relative who can help him support his treatment.</p>
+        </div>
+        <div class="donate-box">
+          <div class="goal">
+            <h3>Goal</h3>
+            <span class="money">55,000 Baht</span><br>
+            <span class="percent">10%</span>
+            <div class="progress-bar">
+              <span class="bar-100" style="width:100%"></span>
+              <span class="bar" style="width:10%"></span>
+            </div>
+            <br><br>
+            <center><button class="btn btn-custom btn-lg page-scroll">♡ Donate</button></center>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-media"> <img src="img/services/service-3.jpg" alt=" "> </div>
+        <div class="service-desc">
+          <h3>Ms. Christina English</h3>
+          <p>She was a high school teacher loved by the children. After she fell down, she found that she has a cancer in her brain.</p>
+        </div>
+        <div class="donate-box">
+          <div class="goal">
+            <h3>Goal</h3>
+            <span class="money">1,000 Baht</span><br>
+            <span class="percent">90%</span>
+            <div class="progress-bar">
+              <span class="bar-100" style="width:100%"></span>
+              <span class="bar" style="width:90%"></span>
+            </div>
+            <br><br>
+            <center><button class="btn btn-custom btn-lg page-scroll">♡ Donate</button></center>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- About Section -->
 <div id="about">
   <div class="container">
@@ -95,82 +168,16 @@ does not focus on making the profit.</p>
     </div>
   </div>
 </div>
-<!-- Services Section -->
-<div id="services">
-  <div class="container">
-    <div class="section-title">
-      <h2>Our Campaigns</h2>
-    </div>
-
-      <div class="col-md-4">
-        <div class="service-media"> <img src="img/services/service-1.jpg" alt=" "> </div>
-        <div class="service-desc">
-          <h3>Ms. Jennifer Snow</h3>
-          <p>She has to suffer with small intestine cancer. Her family is poor so she does not have enough money to pay for the medical expense.</p>
-        </div>
-        <div class="donate-box">
-          <div class="goal">
-            <h3>Goal</h3>
-            <span class="money">17,000 Baht</span><br>
-            <div class="progress-bar">
-              <span class="bar-100" style="width:100%"></span>
-              <span class="bar" style="width:44%"></span>
-            </div>
-            <br><br>
-            <center><button class="btn btn-custom btn-lg page-scroll">♡ Donate</button></center>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="service-media"> <img src="img/services/service-2.jpg" alt=" "> </div>
-        <div class="service-desc">
-          <h3>Mr. John Lee</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <div class="donate-box">
-          <div class="goal">
-            <h3>Goal</h3>
-            <span class="money">55,000 Baht</span><br>
-            <div class="progress-bar">
-              <span class="bar-100" style="width:100%"></span>
-              <span class="bar" style="width:10%"></span>
-            </div>
-            <br><br>
-            <center><button class="btn btn-custom btn-lg page-scroll">♡ Donate</button></center>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="service-media"> <img src="img/services/service-3.jpg" alt=" "> </div>
-        <div class="service-desc">
-          <h3>Ms. Christina English</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</p>
-        </div>
-        <div class="donate-box">
-          <div class="goal">
-            <h3>Goal</h3>
-            <span class="money">1,000 Baht</span><br>
-            <div class="progress-bar">
-              <span class="bar-100" style="width:100%"></span>
-              <span class="bar" style="width:90%"></span>
-            </div>
-            <br><br>
-            <center><button class="btn btn-custom btn-lg page-scroll">♡ Donate</button></center>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 <!-- Footer Section -->
 <div id="footer">
   <div class="container text-center">
     <p>&copy; 2017 INNOVA. Design by <a href="http://www.templatewire.com" rel="nofollow">TemplateWire</a></p>
   </div>
 </div>
+
 <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
-<script type="text/javascript" src="js/SmoothScroll.js"></script>
+<!-- <script type="text/javascript" src="js/SmoothScroll.js"></script> -->
 <script type="text/javascript" src="js/nivo-lightbox.js"></script>
 <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
 <script type="text/javascript" src="js/contact_me.js"></script>

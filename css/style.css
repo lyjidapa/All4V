@@ -299,6 +299,22 @@ header .intro-text {
 #services .service-desc hr {
 	margin-left: 0;
 }
+
+.top-progress{
+	margin-right: 10px:
+}
+
+.percent{
+	position: absolute;
+  /* right: 0; */
+	color: black;
+  font-size: 1.25em;
+}
+
+.money{
+	font-size: 1.25em;
+}
+
 .progress-bar {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -306,9 +322,10 @@ header .intro-text {
     background-clip: padding-box;
     clear: both;
     position: relative;
-    width: 100%;
+    width: 85%;
     height: 10px;
     margin: 10px 0 5px;
+		margin-right: 10px;
     background-color: #efefef;
 }
 .bar {
@@ -538,6 +555,48 @@ color: #777;
 #footer a:hover {
 	color: #e52f3c;
 }
+
+/*campaign 1*/
+.container {
+    position: relative;
+}
+h6 {
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 20px;
+	margin-top: 50px;
+}
+.cam-text{
+	margin-top: 100px;
+
+}
+.tab-select>.select{
+    display: inline-block;
+    font-family: "kanitlight",Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    font-size: 1.25em;
+    list-style: none;
+}
+
+li1 {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.link{
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Style the active class (and buttons on mouse-over) */
+/* .active, .link:hover {
+  background-color: #666;
+  color: white;
+} */
 
 @media (max-width: 768px) {
 #about img {
