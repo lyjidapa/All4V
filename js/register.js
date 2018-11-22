@@ -44,7 +44,7 @@ btnRegister.addEventListener('click', function(e){
             info.className = '';
             info.innerHTML = 'Password must contain at least 6 character!';
             info.style.color = '#e74c3c';
-            info.style.display = 'block';            
+            info.style.display = 'block';
             info.className += 'animated shake';
           }
           else{
@@ -57,7 +57,7 @@ btnRegister.addEventListener('click', function(e){
 				Email: txtEmail.value,
 				Password: txtPassword.value
 			});
-			
+
             txtUsername.value = '';
             txtEmail.value = '';
             txtPassword.value = '';
@@ -65,7 +65,7 @@ btnRegister.addEventListener('click', function(e){
           }
         }
       }
-  
+
   }
-  
+
 });

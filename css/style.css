@@ -52,6 +52,22 @@ ul, ol {
 	webkit-padding: 0;
 	moz-padding: 0;
 }
+/* .guest a {
+	color: #1f386e;
+	font-weight: 400;
+}
+.guest a:hover, .guest a:focus {
+	text-decoration: none;
+	color: #e52f3c;
+}
+.guest ul, .guest ol {
+	list-style: none;
+}
+.guest ul, .guest ol {
+	padding: 0;
+	webkit-padding: 0;
+	moz-padding: 0;
+} */
 hr {
 	height: 2px;
 	width: 70px;
@@ -570,7 +586,7 @@ h6 {
 	margin-top: 100px;
 
 }
-.tab-select>.select{
+.tab-select li1{
     display: inline-block;
     font-family: "kanitlight",Helvetica Neue,Helvetica,Arial,sans-serif;
     font-weight: 100;
@@ -584,7 +600,11 @@ li1 {
     display: list-item;
     text-align: -webkit-match-parent;
 }
-.link{
+li1:active {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.link1{
   border: none;
   outline: none;
   padding: 10px 16px;
@@ -593,10 +613,16 @@ li1 {
 }
 
 /* Style the active class (and buttons on mouse-over) */
-/* .active, .link:hover {
-  background-color: #666;
+/* .active, .link1 {
+  background-color: #666666;
   color: white;
 } */
+.cen {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+paign 1*/
 
 @media (max-width: 768px) {
 #about img {

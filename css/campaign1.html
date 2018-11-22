@@ -49,12 +49,12 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><a onclick="window.location.href='/All4V/index1.html'">Home</a></li>
-        <li><a onclick="window.location.href='/All4V/index1.html#services'">Campaigns</a></li>
-        <li><a onclick="window.location.href='/All4V/index1.html#about'">About us</a></li>
+        <li><a onclick="window.location.href='/All4V/index.html'">Home</a></li>
+        <li><a onclick="window.location.href='/All4V/index.html#services'">Campaigns</a></li>
+        <li><a onclick="window.location.href='/All4V/index.html#about'">About us</a></li>
         <li><h2>|</h2></li>
-        <li><a onclick="window.location.href='/All4V/campaignForm.html'">Create campaign</a></li>
-        <li><a onclick="window.location.href='/All4V/index.html'">Logout</a></li>
+        <li><a href="#login" class="page-scroll">Login</a></li>
+        <li><a href="#contact" class="page-scroll">Registration</a></li>
       </ul>
     </div>
     <!-- /.navbar-collapse -->
@@ -68,16 +68,14 @@
         h3 {color:#D8D8D8}
       </style>
   <h3><font size="3">Cancer | Thailand</h3>
-  <h4><font size="5"><b>Metastatic colon cancer to the patella</b></h4>
+  <h4><font size="5"><b>Cancer of the knee</b></h4>
     <div class="col-sm-5">
     <div class="service-media"><img src="img/cam1.JPG" > </div>
 
     <br>
-    <p>His name is Suchart Panthong aged 51 years old. Suchart lives in Thailand.
-      He is facing with metastatic colon cancer to the patella need to do surgery as fast as possible.
-      Doctor makes an appointment to do surgery in December to prevent cancer from spreading.
-      Medical expense is around 95000 baht but he does not have enough money for the treatment.</p>
-
+    <p>His name is Suchart who has 51 years old. Bobby live in Thailand. He facing with metastatic colon cancer to the patella need to do surgery as fast as possible. Doctor make appointment to do surgery in December for prevent cancer from spreading.
+      Cost is about 95000 THB. But now she is still not has money to treat the cancer.
+    </p>
     <p><strong>Campaign</strong> : 4 months</p>
 
     </div>
@@ -90,13 +88,14 @@
 </section> -->
 <div class="cam-select">
   <div class="container" >
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a onclick="showreport()">Report</a></li>
-        <li><a onclick="showphoto()">Photo</a></li>
-        <li><a>Expense</a></li>
+    <ul class="tab-select">
+      <li class="active">
+        <a class="link1" onclick="showreport()"> Report</button>
+      </li>
+      <li >
+        <a class="link1" onclick="showphoto()"> Photo</button>
+      </li>
       </ul>
-    </div>
 
       <div id="reportdiv">
       <h6 id="Report"> Report</h6>
@@ -116,6 +115,14 @@
       <img class="cen" src="img/cam1_3.jpg" alt="Girl in a jacket" width="500" height="500">
       <p>Resection specimen. The specimen consists of complete resection of the knee joint (distal femur, proximal tibia, patella). Extensive tumor in the soft tissues resulted in formation of intestinal-like glands. </p>
   </div>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+  $(document).on('click', 'ul li',fuction(){
+    $(this).addClass(active).siblings.removeClass('active')
+
+  })
+</script>
+
     </div>
    </div  >
 
