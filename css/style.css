@@ -576,57 +576,51 @@ color: #777;
 	color: #e52f3c;
 }
 
-/*campaign 1*/
+/*campaign 1 begin*/
 .container {
     position: relative;
 }
+
 h6 {
-	text-transform: uppercase;
+	font-size: 14px;
 	font-weight: 700;
 	line-height: 20px;
 	margin-top: 50px;
 }
-.cam-text{
-	margin-top: 100px;
+
+ul a{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 20px;
 
 }
-.tab-select li1{
-    display: inline-block;
-    font-family: "kanitlight",Helvetica Neue,Helvetica,Arial,sans-serif;
-    font-weight: 100;
-    margin: 0;
-    padding: 0;
-    font-size: 1.25em;
-    list-style: none;
+ul li{margin-bottom: 10px;}
+li a{
+	display: inline-block;
+	color: #1f386e;
+	text-decoration: none;
+}
+li a::after{
+	content: '';
+	display:block;
+	width:0%;
+	height:2px;
+	background: #000;
+	transition:width .3s
+}
+li a:hover::after{
+	width: 100%;
+	transition: width .3s;
 }
 
-li1 {
-    display: list-item;
-    text-align: -webkit-match-parent;
-}
-li1:active {
-    display: list-item;
-    text-align: -webkit-match-parent;
-}
-.link1{
-  border: none;
-  outline: none;
-  padding: 10px 16px;
-  background-color: #f1f1f1;
-  cursor: pointer;
-}
-
-/* Style the active class (and buttons on mouse-over) */
-/* .active, .link1 {
-  background-color: #666666;
-  color: white;
-} */
 .cen {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-paign 1*/
+/*campaign 1 end*/
 
 @media (max-width: 768px) {
 #about img {
