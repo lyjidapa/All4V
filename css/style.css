@@ -618,12 +618,25 @@ li a:hover::after{
     margin-right: auto;
 }
 /*payment form begin*/
-h7 {
-	background-color: lightgrey;
+/*h7 {
+	background-color: red;
 	font-size: 20px;
 	font-weight: 700;
 	line-height: 12px;
 	margin-top: 50px;
+
+
+}*/
+
+#donateForm{
+	background-color: #E5E4E2;
+	font-size: 20px;
+}
+
+
+
+
+
 }
 
 
