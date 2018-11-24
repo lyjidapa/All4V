@@ -149,19 +149,78 @@
   </div>
     </div>
    </div  >
-  <div id="donateForm"
-   <div class="section-donation-form">
-     <div class="anchor"><a name="donate"></a></div>
-   <div class="container">
-   <h7 class="title-form tect center">
-     <span class="to_project font15"><br><br><center>Donate to</span><br>
-    <br>
-     <span class="project_name kanit-light">Suchart Panthong</span><br>
-    <br>
-     <span class="patient_name kanit-light">[ Metastatic colon cancer to the patella ]</center></span>
-   </h7>
-   </div>
- </div>
+
+
+
+   <!--Payment Form -->
+   <div id="donateForm"
+    <div class="section-donation-form">
+      <div class="anchor"><a name="donate"></a></div>
+    <div class="container">
+    <h7 class="title-form tect center">
+      <span class="to_project font15"><br><br><center>Donate to</span><br>
+     <br>
+      <span class="project_name kanit-light">Suchart Panthong</span><br>
+     <br>
+      <span class="patient_name kanit-light">[ Metastatic colon cancer to the patella ]</center></span>
+    </h7>
+    </div>
+
+   <!--
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1 col-sm-12">
+
+        <form action="/th/d/borderlearningcenter/" method="post" id="donation_form">
+          <input type='hidden' name='csrfmiddlewaretoken' value='' />
+          <input type="hidden" name="currency" value="THB" />
+
+          <div class="non-field-errors">
+
+  </div>
+ -->
+
+
+ <fieldset class="form-amount">
+           <legend class=""><br>Amount of Money</legend>
+           <div class="row amount-select">
+             <div class="btn-group" data-toggle="buttons">
+
+               <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                 <label class="btn active">
+                   <input type="radio" name="amount" id="id_amount_2000" value="2000" autocomplete="off" checked="checked"> 2,000 <span class="unit">THB</span><span class="hidden">THB</span>
+
+                   <p class="amount-choice-help-text"></p>
+                 </label>
+               </div>
+
+               <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                 <label class="btn">
+                   <input type="radio" name="amount" id="id_amount_1000" value="1000" autocomplete="off" > 1,000 <span class="unit">THB</span><span class="hidden">THB</span>
+
+                   <p class="amount-choice-help-text"></p>
+                 </label>
+               </div>
+
+               <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                 <label class="btn">
+                   <input type="radio" name="amount" id="id_amount_500" value="500" autocomplete="off" > 500 <span class="unit">THB</span><span class="hidden">THB</span>
+
+                   <p class="amount-choice-help-text"></p>
+                 </label>
+               </div>
+
+               <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                 <label class="custom">
+
+                   <span class="caption unit">Other</span>
+                   <span class="custom_input"><input type="text" name="amount" id="id_amount_custom" autocomplete="off" /></span>
+                 </label>
+                 <input id="id_real_amount" name="real_amount" type="hidden" value="2000">
+               </div>
+             </div>
+           </div>
+
+         </fieldset>
 
 
 
