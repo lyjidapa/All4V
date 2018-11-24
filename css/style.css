@@ -617,6 +617,17 @@ li a:hover::after{
     margin-left: auto;
     margin-right: auto;
 }
+/*payment form begin*/
+h7 {
+	background-color: lightgrey
+	color: navy;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 12px;
+	margin-top: 50px;
+}
+
+
 /*block donate begin*/
 
 #selection_container{
