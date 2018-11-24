@@ -584,7 +584,7 @@ h6 {
 	line-height: 20px;
 	margin-top: 50px;
 }
-
+/*underline bottom begin*/
 ul a{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 20px;
@@ -611,12 +611,30 @@ li a:hover::after{
 	width: 100%;
 	transition: width .3s;
 }
-
+/*underline bottom end*/
 .cen {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+/*block donate begin*/
+
+#selection_container{
+	width: 1170px;
+	margin: auto;
+}
+#section_block{
+	width: 370px;
+	border: 1px solid black;
+	text-align: center;
+	display: inline-block;
+}
+.blockTitle{
+	front-size:13px;
+	background-color: gray;
+	padding: 50px;
+}
+/*block donate end*/
 /*campaign 1 end*/
 
 @media (max-width: 768px) {
