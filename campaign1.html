@@ -145,7 +145,7 @@
       <img class="cen" src="img/cam1_2.jpg" alt="Girl in a jacket" >
       <p>A. Low-power hematoxylin and eosin stain of soft-tissue mass arising from the patella demonstrates glands and areas of “dirty” necrosis, characteristic of metastatic gastrointestinal adenocarcinoma. B. Low-power keratin stain is positive for epithelial material, consistent with adenocarcinoma. C. Low-power CDX2 stain is positive, consistent with tumor of lower gastrointestinal tract/colonic origin. </p>
       <img class="cen" src="img/cam1_3.jpg" alt="Girl in a jacket" width="500" height="500">
-      <p>Resection specimen. The specimen consists of complete resection of the knee joint (distal femur, proximal tibia, patella). Extensive tumor in the soft tissues resulted in formation of intestinal-like glands. </p>
+      <p>Resection specimen. The specimen consists of complete resection of the knee joint (distal femur, proximal tibia, patella). Extensive tumor in the soft tissues resulted in formation of intestinal-like glands. </p><br>
   </div>
     </div>
    </div  >
@@ -157,15 +157,14 @@
     <div class="section-donation-form">
       <div class="anchor"><a name="donate"></a></div>
     <div class="container">
-    <h7 class="title-form tect center">
-      <span class="to_project font15"><br><br><center>Donate to</span><br>
+    <div class="title-form tect center">
+      <span class="to_project font10 "><br><center>Donate to</span><br>
      <br>
       <span class="project_name kanit-light">Suchart Panthong</span><br>
      <br>
-      <span class="patient_name kanit-light">[ Metastatic colon cancer to the patella ]</center></span>
-    </h7>
+      <span class="patient_name kanit-light">[ Metastatic colon cancer to the patella ]</center></span><br>
     </div>
-
+</div></div>
    <!--
     <div class="row">
       <div class="col-md-10 col-md-offset-1 col-sm-12">
@@ -178,6 +177,7 @@
 
   </div>
  -->
+
 
 
  <fieldset class="form-amount">
@@ -221,6 +221,114 @@
            </div>
 
          </fieldset>
+<!--Payment Method-->
+<fieldset class="form-payment" data-payment="creditcard">
+          <legend>Select Payment Method</legend>
+
+          <div class="options">
+            <div class="row">
+              <div class="col-md-4 col-sm-4 col-xs-6">
+                  <div class="option-wrapper">
+                    <label class="radio option-creditcard active">
+                      <span>
+                      <img src="Credit.png">
+                      <input type="radio" name="payment_option" id="id_payment_creditcard" value="creditcard" autocomplete="off" checked="checked">
+                      Credit card/Debit Card
+                      </span>
+                    </label>
+                  </div>
+              </div>
+
+              </div>
+                </div>
+
+                              <div class="col-md-4 col-sm-4 col-xs-6">
+                                <div class="option-wrapper">
+                                  <label class="radio option-transfer">
+                                    <span>
+                                      <input type="radio" name="payment_option" id="id_payment_transfer" value="transfer" autocomplete="off" >
+                                      Banck Account
+                                    </span>
+                                  </label>
+                                </div>
+                                </fieldset>
+                                <div class="forms at-creditcard">
+                                            <div class="payment-form form-creditcard" data-note="ข้อมูลบัตรYour creditcard will be securely processed by Omise">
+                                              <input type="hidden" name="omise_token">
+                                              <input type="hidden" name="omise_card_id">
+
+                                              <fieldset class="form-creditcard">
+                                                <legend class="hide-txt">Card Information</legend>
+                                                <div class="row">
+                                                  <div class="col-md-6">
+                                                    <div class="form-group">
+                                                      <label class="control-label" for="id_card_name">Card Name</label>
+                                                      <input class="form-control" type="text" id="id_card_name" required />
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                    <div class="form-group">
+                                                      <label class="control-label" for="id_card_number">Number</label>
+                                                      <input class="form-control" type="text" id="id_card_number" required autocomplete="off" />
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </fieldset>
+
+                                              <div class="row">
+                                                <div class="col-md-6">
+                                                  <div class="form-group form-creditcard-expiration">
+                                                    <label class="control-label" for="id_card_expire_month">Expire</label>
+                                                    <input class="form-control" type="text" id="id_card_expire_month" data-omise="expiration_month" size="2" placeholder="MM" autocomplete="off">
+                                                    <span class="divider">/</span>
+                                                    <input class="form-control" type="text" id="id_card_expire_year" data-omise="expiration_year" size="4" placeholder="YY" autocomplete="off">
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                  <div class="form-group form-security-code">
+                                                    <label class="control-label" for="id_card_security">CVV</label>
+                                                    <input class="form-control" type="password" id="id_card_security" maxlength="8" required autocomplete="off" />
+                                                  </div>
+                                                </div>
+                                              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <form>
+           <fieldset>
+              <legend>Personal Information</legend>
+                                  Name: <input type="text"><br>
+                                  Email: <input type="text"><br>
+                                  Mobile Phone: <input type="text">
+                                 </fieldset>
+                                </form>
+                                <div class="form-button">
+                                          <div class="row">
+                                            <div class="col-md-5">
+                                              <button type="submit" id="create_token" class="btn btn-primary">Confirm</button>
+                                            </div>
+                                          </div>
+
+
+
+
+
+
+
+
+
+
 
 
 
