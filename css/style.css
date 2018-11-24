@@ -619,8 +619,7 @@ li a:hover::after{
 }
 /*payment form begin*/
 h7 {
-	background-color: lightgrey
-	color: navy;
+	background-color: lightgrey;
 	font-size: 20px;
 	font-weight: 700;
 	line-height: 12px;
