@@ -56,7 +56,7 @@ btnRegister.addEventListener('click', function(e){
 				Username: txtUsername.value,
 				Email: txtEmail.value,
 				Password: txtPassword.value
-        alert('You"ve registered successfully!')
+        alert('You"ve registered successfully!');
 			});
 
             txtUsername.value = '';
