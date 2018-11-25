@@ -15,12 +15,26 @@ function validateEmail(email) {
     return re.test(email);
 }
 
+function signUp(){
+	firebase.auth().createUserWithEmailAndPassword(txtEmail.value,txtPassword.value).catch(function (error){
+		console.log(error);
+	});
+}
+
+function signIn(){
+	firebase.auth().signInWithEmailAndPassword(txtEmail.value,txtPassword.value).catch(function (error){
+		console.log(error);
+	});
+	alert('Successful Login');
+	window.location.href="/All4V/index1.html";
+}
+
 //Register Button Click Event
 btnRegister.addEventListener('click', function(e){
   e.preventDefault();
   if(txtUsername.value == '' || txtEmail.value == '' || txtPassword.value == ''){
     info.className = '';
-    info.innerHTML = 'Please fill the form!';
+    alert('Please fill the form!');
     info.style.color = '#e74c3c';
     info.style.display = 'block';
     info.className += 'animated shake';
@@ -28,27 +42,26 @@ btnRegister.addEventListener('click', function(e){
   else{
       if(txtUsername.value.length < 3){
         info.className = '';
-        info.innerHTML = 'Username must contain at least 3 character!';
+        alert('Username must contain at least 3 character!');
         info.style.color = '#e74c3c';
         info.style.display = 'block';
         info.className += 'animated shake';
       }else{
         if(!validateEmail(txtEmail.value)){
           info.className = '';
-          info.innerHTML = 'Invalid Email!';
+          alert('Invalid Email!');
           info.style.color = '#e74c3c';
           info.style.display = 'block';
           info.className += 'animated shake';
         }else{
           if(txtPassword.value.length < 6){
             info.className = '';
-            info.innerHTML = 'Password must contain at least 6 character!';
+            alert('Password must contain at least 6 character!');
             info.style.color = '#e74c3c';
             info.style.display = 'block';
             info.className += 'animated shake';
           }
           else{
-            info.innerHTML = 'You"ve registered successfully!';
             info.className += 'animated bounce';
             info.style.color = '#2ecc71';
             info.style.display = 'block';
@@ -56,8 +69,11 @@ btnRegister.addEventListener('click', function(e){
 				Username: txtUsername.value,
 				Email: txtEmail.value,
 				Password: txtPassword.value
-        alert('You"ve registered successfully!');
 			});
+
+			signUp();
+			alert('You"ve registered successfully!');
+      window.location.href="/All4V/index1.html";
 
             txtUsername.value = '';
             txtEmail.value = '';
