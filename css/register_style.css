@@ -1,3 +1,4 @@
+
 body{
   margin:0;
   padding:0;
@@ -7,8 +8,9 @@ body{
   font-family: 'Comfortaa', cursive;
   user-select:none;
 }
+
 #main{
-  width:500px;
+  width:100%;
   margin:auto;
   border:1px solid #eee;
   margin-top:100px;
@@ -21,6 +23,7 @@ table{
   margin:auto;
   font-family: 'Comfortaa', cursive;
 }
+
 td{
   padding:10px;
   font-family: 'Comfortaa', cursive;
@@ -41,7 +44,7 @@ button{
   background:#069;
   color:#fff;
   outline:none;
-  float:right;
+  /*float:right;*/
   cursor:pointer;
   font-family: 'Comfortaa', cursive;
   margin-left:15px;
