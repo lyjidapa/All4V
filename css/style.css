@@ -632,8 +632,9 @@ li a:hover::after{
 	background-color: #E5E4E2;
 	font-size: 20px;
 }
-
-
+.options{
+	font-size: 20;
+}
 
 
 
