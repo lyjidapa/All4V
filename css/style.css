@@ -642,7 +642,13 @@ li a:hover::after{
 
 
 /*block donate begin*/
-
+h7 {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0 0 20px 0;
+	font-weight: 700;
+	font-size: 32px;
+	color: #333;
+}
 #selection_container{
 	width: 1170px;
 	margin: auto;
@@ -655,8 +661,9 @@ li a:hover::after{
 }
 .blockTitle{
 	front-size:13px;
-	background-color: gray;
-	padding: 50px;
+	margin: 20px;
+	margin-top: 30px;
+	text-transform: uppercase;
 }
 /*block donate end*/
 /*campaign 1 end*/
