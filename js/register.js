@@ -72,7 +72,7 @@ btnRegister.addEventListener('click', function(e){
 			});
 
 			signUp();
-			alert('You"ve registered successfully!');
+			alert("You've registered successfully!");
       window.location.href="/All4V/index1.html";
 
             txtUsername.value = '';
