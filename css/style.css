@@ -594,7 +594,7 @@ color: #777;
 	padding: 5px 0;
 }
 #services1 {
-	padding: 0px 0px;
+	padding: 10px 10px;
 }
 h6 {
 	font-size: 14px;
@@ -635,14 +635,6 @@ li a:hover::after{
     margin-left: auto;
     margin-right: auto;
 }
-/*payment form begin*/
-/*h7 {
-	background-color: red;
-	font-size: 20px;
-	font-weight: 700;
-	line-height: 12px;
-	margin-top: 50px;
-}*/
 
 #donateForm{
 	background-color: #E5E4E2;
@@ -743,10 +735,16 @@ h7 {
 /*box donate end*/
 /*campaign 1 end*/
 
+/*payment form begin*/
+.btn-pay{
+	font-size: 15px;
+}
+
+
+/*payment form end*/
+
+
 @media (max-width: 768px) {
 #about img {
 	margin: 50px 0;
-}
-
-}
-}
+}}
