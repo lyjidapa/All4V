@@ -574,10 +574,28 @@ color: #777;
 }
 
 /*campaign 1 begin*/
-.container {
-    position: relative;
+#services2 {
+	padding-top: 100px;
+	padding-right: 100px;
+	padding-left: 100px;
+	padding-bottom: 10px;
 }
-
+#services2 .service-media {
+	margin: 10px;
+}
+#services2 .service-media img {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+#services2 h3 {
+	font-weight: 700;
+	padding: 5px 0;
+}
+#services1 {
+	padding: 0px 0px;
+}
 h6 {
 	font-size: 14px;
 	font-weight: 700;
@@ -634,13 +652,7 @@ li a:hover::after{
 	font-size: 20;
 }
 
-
-
-}
-
-
-/*block donate begin*/
-
+/*box donate begin*/
 h7 {
 	font-family: 'Montserrat', sans-serif;
 
@@ -728,7 +740,7 @@ h7 {
 	height: 10px;
 	background-color: #efefef;
 }
-/*block donate end*/
+/*box donate end*/
 /*campaign 1 end*/
 
 @media (max-width: 768px) {
