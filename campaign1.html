@@ -86,48 +86,28 @@
       <div class="col-md-4">
            <selection>
              <div id="selection_container col-md-4">
-                 <div id="section_block">
-                   <div class="blockTitle"><h7>Total Donation</h7></div>
-                   <div class="blockInfo"> <p>gggggggggggggggggggggggggggggg</p></div>
+               <div class="donate-box">
+                 <div class="goal">
                    <h3>Goal</h3>
-                   <span class="money">55,000 Baht</span><br>
-                   <span class="percent">10%</span>
+                   <div class="top-progress">
+                     <span class="money" id="current1"></span>
+                   </div>
+                   <span class="percent" id="percent1"></span>
                    <div class="progress-bar">
                      <span class="bar-100" style="width:100%"></span>
-                     <span class="bar" style="width:10%"></span>
+                     <span class="bar" id="bar1"></span>
                    </div>
                    <br><br>
-                   <center><button class="btn btn-custom btn-lg page-scroll">♡ Donate</button></center>
+                   <center><button class="btn btn-custom btn-lg page-scroll" onclick="window.location.href='campaign1.html'">♡ Donate</button></center>
                  </div>
+               </div>
                </div>
            </selection>
         </div>
       </div>
 </div>
-
-
-
-  <!-- tab <block donation>>
-              <div class="donate-box" width="500px">
-                <div class="goal">
-                  <h3>Goal</h3>
-                  <span class="money">55,000 Baht</span><br>
-                  <span class="percent">10%</span>
-                  <div class="progress-bar">
-                    <span class="bar-100" style="width:100%"></span>
-                    <span class="bar" style="width:10%"></span>
-                  </div>
-                  <br><br>
-                  <center><button class="btn btn-custom btn-lg page-scroll">♡ Donate</button></center>
-                </div>
-              </div>
-                </block donation> -->
-
 </div>
 </div>
-
-
-
 <!-- tab <section>
 </section> -->
 <div class="cam-select">
@@ -343,6 +323,20 @@
     <p>&copy; 2017 INNOVA. Design by <a href="http://www.templatewire.com" rel="nofollow">TemplateWire</a></p>
   </div>
 </div>
+<script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAfXhEIrZ2lgabQXDuNALGZvcU-RNhHvCY",
+    authDomain: "all4v-fd7fe.firebaseapp.com",
+    databaseURL: "https://all4v-fd7fe.firebaseio.com",
+    projectId: "all4v-fd7fe",
+    storageBucket: "all4v-fd7fe.appspot.com",
+    messagingSenderId: "750350348578"
+  };
+  firebase.initializeApp(config);
+</script>
+<script type="text/javascript" src="js/money.js"></script>
 <script type="text/javascript" src="js/campaign.js"></script>
 <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
