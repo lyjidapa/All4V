@@ -15,3 +15,11 @@ function showphoto(){
 function mypayment() {
     location.href = "#pay";
 }
+
+
+function cardinfo(){
+    location.href = "#Cardinfo";
+}
+function cardinfo(){
+    location.href = "#bankAcc";
+}
