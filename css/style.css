@@ -636,13 +636,44 @@ li a:hover::after{
     margin-right: auto;
 }
 
+
 #donateForm{
-	background-color: #E5E4E2;
+	background-color: #1f386e;
+	color: white;
 	font-size: 20px;
+	border: none;
 }
 .options{
 	font-size: 20;
 }
+/*Personal info begin*/
+
+.help-block{
+	color: red;
+	font-size: 12px;
+}
+.control-label{
+	font-size: 15px;
+}
+/*Personal info end*/
+
+/*Confirmation button begin*/
+#create_token{
+	background-color: #1f386e;
+ border: none;
+ color: white;
+ padding: 15px 32px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 16px;
+}
+
+/*Confirmation button end*/
+
+
+
+
 
 /*box donate begin*/
 h7 {
