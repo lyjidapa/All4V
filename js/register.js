@@ -5,7 +5,8 @@ var btnRegister = document.getElementById('btnRegister');
 var btnLogin = document.getElementById('btnLogin');
 var registrationTable = document.getElementById('registrationTable');
 var loginTable = document.getElementById('loginTable');
-var info = document.getElementById('info');
+var infol = document.getElementById('infol');
+var infos = document.getElementById('infos');
 var txtLoginEmail = document.getElementById('txtLoginEmail');
 var txtLoginPassword = document.getElementById('txtLoginPassword');
 
@@ -22,70 +23,55 @@ function signUp(){
 	firebase.auth().createUserWithEmailAndPassword(txtEmail.value.trim(),txtPassword.value.trim())
    .then(function(firebaseUser) {
        // Success
+       alert("You've registered successfully!");
        window.location.href="/All4V/index1.html";
    })
   .catch(function(error) {
        // Error Handling
        console.log(error);
-       alert(error);
-       window.location.href="/All4V/index.html";
+       infos.innerText = error;
   });
 }
 
 function signIn(){
   // check value
-  //alert(txtLoginEmail.value);
-  //alert(txtLoginPassword.value);
   firebase.auth().signInWithEmailAndPassword(txtLoginEmail.value,txtLoginPassword.value)
    .then(function(firebaseUser) {
        // Success
-       alert('Successful Login');
+       alert('Successfully Login');
        window.location.href="/All4V/index1.html";
    })
   .catch(function(error) {
        // Error Handling
        console.log(error);
-       alert(error);
-       window.location.href="/All4V/index.html";
+       infol.innerText = error;
   });
 }
 
+//Login Button Event
+btnLogin.addEventListener('click', function(e){
+  e.preventDefault();
+  signIn();
+});
 //Register Button Click Event
 btnRegister.addEventListener('click', function(e){
   e.preventDefault();
+  infos.innerText='';
+  infol.innerText='';
   if(txtUsername.value == '' || txtEmail.value == '' || txtPassword.value == ''){
-    info.className = '';
-    alert('Please fill the form!');
-    info.style.color = '#e74c3c';
-    info.style.display = 'block';
-    info.className += 'animated shake';
+    alert('Please fill in the form!');
   }
   else{
       if(txtUsername.value.length < 3){
-        info.className = '';
-        alert('Username must contain at least 3 character!');
-        info.style.color = '#e74c3c';
-        info.style.display = 'block';
-        info.className += 'animated shake';
+        infos.innerText = 'Username must contain at least 3 character!';
       }else{
         if(!validateEmail(txtEmail.value)){
-          info.className = '';
-          alert('Invalid Email!');
-          info.style.color = '#e74c3c';
-          info.style.display = 'block';
-          info.className += 'animated shake';
+          infos.innerText = 'Invalid Email!';
         }else{
           if(txtPassword.value.length < 6){
-            info.className = '';
-            alert('Password must contain at least 6 character!');
-            info.style.color = '#e74c3c';
-            info.style.display = 'block';
-            info.className += 'animated shake';
+            infos.innerText = 'Password must contain at least 6 character!';
           }
           else{
-            info.className += 'animated bounce';
-            info.style.color = '#2ecc71';
-            info.style.display = 'block';
            		firebaseRef.child('users').push({
 				Username: txtUsername.value.trim(),
 				Email: txtEmail.value.trim(),
@@ -93,7 +79,6 @@ btnRegister.addEventListener('click', function(e){
 			});
 
 			signUp();
-			alert('You"ve registered successfully!');
 
             txtUsername.value = '';
             txtEmail.value = '';

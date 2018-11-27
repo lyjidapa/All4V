@@ -31,12 +31,12 @@ function setCampaign(goal,current){
   bar1.style.width = percent+'%';
 }
 
-donate1.addEventListener("click", function () {
-
-  var money = 1000;
-  current = current+money;
-  alert(current);
-ref.update({
-  "current": current
-});
-});
+// donate1.addEventListener("click", function () {
+//
+//   var money = 1000;
+//   current = current+money;
+//   alert(current);
+// ref.update({
+//   "current": current
+// });
+// });

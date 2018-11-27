@@ -29,6 +29,10 @@ input[type=text]:focus, input[type=password]:focus {
     opacity: 0.9;
 } */
 
+#infol, #infos{
+  color: red;
+}
+
 button.cancelbtn:hover, button.signupbtn:hover {
     opacity:1;
 }
@@ -79,7 +83,7 @@ button.cancelbtn:hover, button.signupbtn:hover {
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    overflow: hidden;; /* Enable scroll if needed */
+    overflow: hidden; /* Enable scroll if needed */
     background-color: #474e5d;
     padding-top: 50px;
 }
