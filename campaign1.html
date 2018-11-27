@@ -203,37 +203,37 @@
               </div>
 
 <!--Payment Method-->
+
+<div id="Cardinfo"class="container">
   <fieldset class="form-payment" data-payment="creditcard">
 
     <legend><br> Select Payment Method </legend>
           <div class="options">
-              <div class="col-md-2 col-sm-4 col-xs-6">
+              <div class="col-md-6">
                   <div class="option-wrapper">
-                    <label class="btn-pay">
-                      <span>
-                      <input type="radio" name="payment_option" id="id_payment_creditcard" value="creditcard" autocomplete="off" checked="checked"> Credit Card/Debit Card
-                      </span>
-                    </label>
+                    <div>
+                      <a href="#Cardinfo" id="cddb"class="btn btn-info" role="button">Credit Card/Debit Card</a>
+                    </div>
                     <div class="options-img"><img src="img/v&m.png" width="150" height="70" > </div>
                   </div>
-
-              </div>
-              <div class="col-md-10 col-sm-4 col-xs-6">
-                  <div class="option-wrapper">
-                    <label class="btn-pay">
-                    <span>
-                    <input type="radio" name="payment_option" id="id_payment_transfer" value="transfer" autocomplete="off"> Banck Account
-                    </span>
-                    </label>
                   </div>
+                  <div class="col-md-6">
+                      <div class="option-wrapper">
+                        <div>
+                          <a href="#bankAcc" id="bankAccount"class="btn btn-info" role="button">Bank Account</a>
+                        </div>
+
+                      </div>
+                      </div>
+
                 </div>
-        </div>
     </fieldset>
 
 <!--card Information-->
+
+  <div   id="Cardinfo">
   <div class="forms at-creditcard">
-      <input type="hidden" name="omise_token">
-      <input type="hidden" name="omise_card_id">
+
       <fieldset class="form-creditcard">
         <legend class="hide-txt"><br>Card Information</legend>
           <div class="row">
@@ -270,6 +270,32 @@
 
 <!--card Information end-->
 
+<!--Bank Account begin-->
+<div id="bankAcc">
+<div class="forms at-bank">
+      <legend class="hide-txt"><br>Bank Account</legend>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="bank_account">
+          <p> Siam Commercial Bank(SCB)<br>
+            Branch: Central Pinklao <br>
+              Account Name: ALL4V<br>
+              No. 123-456789-0 </p>
+              <img src="img/SCB.JPG" width="160" height="60" >
+            </div>
+          </div>
+        </div>
+        <br>
+
+          <div class="col--6">
+<button type="submit" id="slip" class="btn btn-primary">Slip</button>
+<div class="slip">**Do not forget to attach the slip**</div>
+
+</div>
+
+
+<!--Bank Account end-->
+
 <!--Personal Information begin-->
 <div class="form-donor">
     <legend><br>Personal Information</legend>
@@ -279,7 +305,7 @@
           <label class="control-label" for="id_fullname">Full Name</label>
           <div class="field-fullname">
             <input class="form-control" id="id_fullname" maxlength="500" name="fullname" type="text" />
-            <div class="help-block">--Leave blank in case if you wanting to be anonymous--</div>
+            <div class="help-block">Leave blank in case if you wanting to be anonymous</div>
 
           </div>
         </div>
