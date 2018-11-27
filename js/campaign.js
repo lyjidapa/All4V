@@ -10,3 +10,8 @@ function showphoto(){
   report.style.display='none';
   photo.style.display='block';
 }
+
+// Goal box link to payment form
+function mypayment() {
+    location.href = "#pay";
+}
