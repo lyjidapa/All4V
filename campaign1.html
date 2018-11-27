@@ -155,65 +155,57 @@
     </div>
 </div></div>
 </div></div>
-   <!--
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1 col-sm-12">
 
-        <form action="/th/d/borderlearningcenter/" method="post" id="donation_form">
-          <input type='hidden' name='csrfmiddlewaretoken' value='' />
-          <input type="hidden" name="currency" value="THB" />
-
-          <div class="non-field-errors">
-
-  </div>
- -->
 
 
  <div id="services1">
    <div   id="pay" class="container">
 
- <fieldset class="form-amount">
-           <legend clsass=""><br>Amount of Money</legend>
-           <div class="row amount-select">
-             <div class="btn-group" data-toggle="buttons">
-               <div class="col-xs-6 col-sm-3 col-md-3 ">
-                 <label class="btn-pay active">
-                   <input type="radio" name="amount" id="id_amount_2000" value="2000" autocomplete="off" checked="checked"> 2,000 <span class="unit">THB</span><span class="hidden">THB</span>
+     <div class="form-amount">
+                <legend clsass="PayHead1"><br>Amount of Money</legend>
+                <div class="row amount-select">
+                  <div class="btn-group" data-toggle="buttons">
 
-                   <p class="amount-choice-help-text"></p>
-                 </label>
-               </div>
-               <div class="col-xs-6 col-sm-3 col-md-3 ">
-                 <label class="btn-pay">
-                   <input type="radio" name="amount" id="id_amount_1000" value="1000" autocomplete="off" > 1,000 <span class="unit">THB</span><span class="hidden">THB</span>
+                    <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                      <label class="btn active">
+                        <input type="radio" name="amount" id="id_amount_2000" value="2000" autocomplete="off" checked="checked"> 2,000 <span class="unit">THB</span><span class="hidden">THB</span>
+                        <p class="amount-choice-help-text"></p>
+                      </label>
+                    </div>
 
-                   <p class="amount-choice-help-text"></p>
-                 </label>
-               </div>
+                    <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                      <label class="btn">
+                        <input type="radio" name="amount" id="id_amount_1000" value="1000" autocomplete="off" > 1,000 <span class="unit">THB</span><span class="hidden">THB</span>
 
-               <div class="col-xs-6 col-sm-3 col-md-3 ">
-                 <label class="btn-pay">
-                   <input type="radio" name="amount" id="id_amount_500" value="500" autocomplete="off" > 500 <span class="unit">THB</span><span class="hidden">THB</span>
+                        <p class="amount-choice-help-text"></p>
+                      </label>
+                    </div>
 
-                   <p class="amount-choice-help-text"></p>
-                 </label>
-               </div>
+                    <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                      <label class="btn">
+                        <input type="radio" name="amount" id="id_amount_500" value="500" autocomplete="off" > 500 <span class="unit">THB</span><span class="hidden">THB</span>
 
-               <div class="col-xs-6 col-sm-3 col-md-3 ">
-                 <label class="btn-pay">
-                   <span class="caption unit">Other
-                    <span class="custom_input"><input type="text" name="amount" id="id_amount_custom" autocomplete="off" /></span>
-                 </label>
-                 <input id="id_real_amount" name="real_amount" type="hidden" value="2000">
-               </div>
-             </div>
-           </div>
+                        <p class="amount-choice-help-text"></p>
+                      </label>
+                    </div>
 
-         </fieldset>
+                    <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                      <label class="custom">
+
+                        <span class="caption unit">Other(THB)</span>
+                        <span class="custom_input"><input type="text" name="amount" id="id_amount_custom" autocomplete="off" /></span>
+                      </label>
+                      <input id="id_real_amount" name="real_amount" type="hidden" value="2000">
+                    </div>
+                  </div>
+                </div>
+
+              </div>
 
 <!--Payment Method-->
   <fieldset class="form-payment" data-payment="creditcard">
-    <legend>Select Payment Method</legend>
+
+    <legend><br> Select Payment Method </legend>
           <div class="options">
               <div class="col-md-2 col-sm-4 col-xs-6">
                   <div class="option-wrapper">
@@ -236,12 +228,12 @@
         </div>
     </fieldset>
 
+<!--card Information-->
   <div class="forms at-creditcard">
-    <div class="payment-form form-creditcard" data-note="ข้อมูลบัตรYour creditcard will be securely processed by Omise">
       <input type="hidden" name="omise_token">
       <input type="hidden" name="omise_card_id">
       <fieldset class="form-creditcard">
-        <legend class="hide-txt">Card Information</legend>
+        <legend class="hide-txt"><br>Card Information</legend>
           <div class="row">
             <div class="col-md-6">
               <div class="form-group">
@@ -273,27 +265,62 @@
           <input class="form-control" type="password" id="id_card_security" maxlength="8" required autocomplete="off" />
       </div>
     </div>
-  </div>
 
-<form>
-  <fieldset1>
-    <legend>Personal Information</legend>
-        Name: <input type="text"><br>
-        Email: <input type="text"><br>
-        Mobile Phone: <input type="text">
-  </fieldset1>
-</form>
-    <div class="form-button">
+<!--card Information end-->
+
+<!--Personal Information begin-->
+<div class="form-donor">
+    <legend><br>Personal Information</legend>
       <div class="row">
-        <div class="col-md-5">
-          <button type="submit" id="create_token" class="btn btn-primary">Confirm</button>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label class="control-label" for="id_fullname">Full Name</label>
+          <div class="field-fullname">
+            <input class="form-control" id="id_fullname" maxlength="500" name="fullname" type="text" />
+            <div class="help-block">--Leave blank in case if you wanting to be anonymous--</div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label class="control-label" for="id_email">Email *</label>
+          <div class="field-email">
+            <input class="form-control" id="id_email" maxlength="100" name="email" type="email" />
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+            <label class="control-label" for="id_phone_number">Phone Number*</label>
+            <div class="field-phone_number">
+                <input class="form-control" id="id_phone_number" maxlength="100" name="phone_number" type="text" />
+
+                <div class="help-block"></div>
+
+            </div>
         </div>
       </div>
     </div>
 </div>
-</div>
-</div>
-</div>
+<!--Personal Information end-->
+
+<!--Confirm button begin-->
+    <div class="form-button">
+      <div class="row">
+        <div class="col-md-5">
+        <center> <button type="submit" id="create_token" class="btn btn-primary">Confirm</button></center>
+        </div>
+      </div>
+    </div>
+<!--Confirm button end-->
+
+
 <!-- Footer Section -->
 <div id="footer">
   <div class="container text-center">
