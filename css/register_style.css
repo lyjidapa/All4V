@@ -53,7 +53,7 @@ button.cancelbtn:hover, button.signupbtn:hover {
   width: 50%;
 }
 
-.signupbtn {
+.signupbtn, .signinbtn {
   float: left;
   background-color: #4CAF50;
   color: white;
