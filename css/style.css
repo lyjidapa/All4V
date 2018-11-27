@@ -671,6 +671,35 @@ li a:hover::after{
 
 /*Confirmation button end*/
 
+/*Payment method button begin*/
+#cddb{
+	border: 2px solid #154360;
+	background-color: white;
+	color: black;
+
+}
+#bankAccount{
+	border: 2px solid #21618C;
+	background-color: white;
+	color: black;
+}
+/*Paymant method button end*/
+
+/*slip  begin */
+#slip{
+	background-color: #4CAF50;
+ border: none;
+ color: white;
+}
+
+.slip{
+	color: red;
+	font-size: 17px;
+	font-style: oblique;
+}
+/*slip  end */
+
+
 
 
 
