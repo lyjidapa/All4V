@@ -33,8 +33,9 @@ function signUp(){
 }
 
 function signIn(){
-  alert(txtLoginEmail.value);
-  alert(txtLoginPassword.value);
+  // check value
+  //alert(txtLoginEmail.value);
+  //alert(txtLoginPassword.value);
   firebase.auth().signInWithEmailAndPassword(txtLoginEmail.value,txtLoginPassword.value)
    .then(function(firebaseUser) {
        // Success
