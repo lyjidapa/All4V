@@ -70,7 +70,7 @@
       <h2>Campaign Form</h2>
     </div>
       <div>
-      <form  id="newCampaign" method = "post" >
+      <!-- <form  id="newCampaign" method = "post" > -->
           <div class="card person-card">
               <div class="card-body">
                   <h2 id="who_message" class="card-title">Who are you ?</h2>
@@ -217,9 +217,9 @@
           </div>
 
           <div style="margin-top: 1em;">
-              <button onclick="location.href='submitCampaignForm.html';" id="saveCampaignForm"  type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+              <button onclick="window.location.href='submitCampaignForm.html'" id="saveCampaignForm" class="btn btn-primary btn-lg btn-block">Submit</button>
           </div>
-      </form>
+      <!-- </form> -->
   </div>
   </div>
 </div>
@@ -228,7 +228,7 @@
 <!-- Footer Section -->
 <div id="footer">
   <div class="container text-center">
-    <!-- <p>&copy; 2017 INNOVA. Design by <a href="http://www.templatewire.com" rel="nofollow">TemplateWire</a></p> -->
+    <p>&copy; 2017 INNOVA. Design by <a href="http://www.templatewire.com" rel="nofollow">ALL4V</a></p>
   </div>
 </div>
 <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
@@ -245,18 +245,6 @@
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 </body>
 <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
-<!-- <script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyAfXhEIrZ2lgabQXDuNALGZvcU-RNhHvCY",
-    authDomain: "all4v-fd7fe.firebaseapp.com",
-    databaseURL: "https://all4v-fd7fe.firebaseio.com",
-    projectId: "all4v-fd7fe",
-    storageBucket: "all4v-fd7fe.appspot.com",
-    messagingSenderId: "750350348578"
-  };
-  firebase.initializeApp(config);
-</script> -->
 <script  type="text/javascript" src="js/campaignForm.js"> </script>
 
 </html>
