@@ -1,10 +1,13 @@
 var txtUsername = document.getElementById('txtUsername');
 var txtEmail = document.getElementById('txtEmail');
+var txtPassword = document.getElementById('txtPassword');
 var btnRegister = document.getElementById('btnRegister');
 var btnLogin = document.getElementById('btnLogin');
 var registrationTable = document.getElementById('registrationTable');
 var loginTable = document.getElementById('loginTable');
 var info = document.getElementById('info');
+var txtLoginEmail = document.getElementById('txtLoginEmail');
+var txtLoginPassword = document.getElementById('txtLoginPassword');
 
 //Firebase Config
 var firebaseRef = firebase.database().ref();
@@ -16,17 +19,34 @@ function validateEmail(email) {
 }
 
 function signUp(){
-	firebase.auth().createUserWithEmailAndPassword(txtEmail.value,txtPassword.value).catch(function (error){
-		console.log(error);
-	});
+	firebase.auth().createUserWithEmailAndPassword(txtEmail.value.trim(),txtPassword.value.trim())
+   .then(function(firebaseUser) {
+       // Success
+       window.location.href="/All4V/index1.html";
+   })
+  .catch(function(error) {
+       // Error Handling
+       console.log(error);
+       alert(error);
+       window.location.href="/All4V/index.html";
+  });
 }
 
 function signIn(){
-	firebase.auth().signInWithEmailAndPassword(txtEmail.value,txtPassword.value).catch(function (error){
-		console.log(error);
-	});
-	alert('Successful Login');
-	window.location.href="/All4V/index1.html";
+  alert(txtLoginEmail.value);
+  alert(txtLoginPassword.value);
+  firebase.auth().signInWithEmailAndPassword(txtLoginEmail.value,txtLoginPassword.value)
+   .then(function(firebaseUser) {
+       // Success
+       alert('Successful Login');
+       window.location.href="/All4V/index1.html";
+   })
+  .catch(function(error) {
+       // Error Handling
+       console.log(error);
+       alert(error);
+       window.location.href="/All4V/index.html";
+  });
 }
 
 //Register Button Click Event
@@ -66,14 +86,13 @@ btnRegister.addEventListener('click', function(e){
             info.style.color = '#2ecc71';
             info.style.display = 'block';
            		firebaseRef.child('users').push({
-				Username: txtUsername.value,
-				Email: txtEmail.value,
-				Password: txtPassword.value
+				Username: txtUsername.value.trim(),
+				Email: txtEmail.value.trim(),
+				Password: txtPassword.value.trim()
 			});
 
 			signUp();
-			alert("You've registered successfully!");
-      window.location.href="/All4V/index1.html";
+			alert('You"ve registered successfully!');
 
             txtUsername.value = '';
             txtEmail.value = '';
