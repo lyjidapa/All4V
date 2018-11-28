@@ -86,6 +86,8 @@
     <div class="container col-md-4">
              <div id="selection_container col-md-4">
                <div id="section_block" class="donate-box" >
+                 <br><h7>Current donation</h7><br>
+                  <span class="current1" id="current1"></span>
                  <div class="goal1">
                    <h7>Goal</h7><br>
                    <div class="top-progress1">
@@ -168,7 +170,7 @@
 
                     <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
                       <label class="btn active">
-                        <input type="radio" name="amount" id="id_amount_2000" value="2000" autocomplete="off" checked="checked"> 2,000 <span class="unit">THB</span><span class="hidden">THB</span>
+                        <input type="radio" name="amount" id="id_amount_2000" value="2000" autocomplete="off"> 2,000 <span class="unit">THB</span><span class="hidden">THB</span>
                         <p class="amount-choice-help-text"></p>
                       </label>
                     </div>
@@ -190,12 +192,10 @@
                     </div>
 
                     <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-                      <label class="custom">
-
-                        <span class="caption unit">Other(THB)</span>
-                        <span class="custom_input"><input type="text" name="amount" id="id_amount_custom" autocomplete="off" /></span>
+                      <label class="btn">
+                        <input type="radio" name="amount" id="id_amount_custom"> Other(THB)
+                        <input type="text" id="id_real_amount">
                       </label>
-                      <input id="id_real_amount" name="real_amount" type="hidden" value="2000">
                     </div>
                   </div>
                 </div>
@@ -270,7 +270,7 @@
     </div>
   </div>
 </div>
-  
+
 
 
 <!--card Information end-->
@@ -351,9 +351,7 @@
     <div class="form-button">
       <div class="row">
         <div class="col-md-12">
-          <form action="submitCampaignForm.html">
         <center> <button type="submit" id="create_token" class="btn btn-primary">Confirm</button></center>
-      </form>
         </div>
       </div>
     </div>

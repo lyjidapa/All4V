@@ -13,6 +13,9 @@ ref.on("value", function(snapshot) {
    console.log(json.goal);
    current = json.current;
    goal = json.goal;
+   if(current>=goal){
+     current = goal;
+   }
    setCampaign(goal,current);
 }, function (error) {
    console.log("Error: " + error.code);
