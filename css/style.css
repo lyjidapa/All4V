@@ -707,13 +707,12 @@ li a:hover::after{
 /*box donate begin*/
 h7 {
 	font-family: 'Montserrat', sans-serif;
-
-	font-weight: 700;
-	font-size: 32px;
+	font-weight: bold;
+	font-size: 22px;
 	color: #333;
 }
 #selection_container{
-	width: 1170px;
+	width: 1200px;
 	margin: auto;
 }
 
@@ -726,11 +725,10 @@ h7 {
 }
 
 .goal1{
-	front-size:13px;
 	margin: 20px;
 	margin-top: 30px;
 	font-weight: bold;
-	color: #333;
+	color: black;
 	text-transform: uppercase;
 }
 
@@ -747,6 +745,12 @@ h7 {
 	margin-left: 100px;
 	margin-right: 30px;
 
+}
+
+.current1{
+	font-family: 'Montserrat', sans-serif;
+	color: #faa91e;
+	font-weight: bold;
 }
 
 .money1{

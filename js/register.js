@@ -24,7 +24,7 @@ function signUp(){
    .then(function(firebaseUser) {
        // Success
        // alert("You've registered successfully!");
-       window.location.href='index1.html';
+       window.location.href="/All4V/index1.html";
    })
   .catch(function(error) {
        // Error Handling
