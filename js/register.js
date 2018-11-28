@@ -23,8 +23,8 @@ function signUp(){
 	firebase.auth().createUserWithEmailAndPassword(txtEmail.value.trim(),txtPassword.value.trim())
    .then(function(firebaseUser) {
        // Success
-       alert("You've registered successfully!");
-       window.location.href="/All4V/index1.html";
+       // alert("You've registered successfully!");
+       window.location.href='index1.html';
    })
   .catch(function(error) {
        // Error Handling
@@ -38,8 +38,8 @@ function signIn(){
   firebase.auth().signInWithEmailAndPassword(txtLoginEmail.value,txtLoginPassword.value)
    .then(function(firebaseUser) {
        // Success
-       alert('Successfully Login');
-       window.location.href="/All4V/index1.html";
+       // alert('Successfully Login');
+       window.location.href='index1.html';
    })
   .catch(function(error) {
        // Error Handling
